@@ -1,0 +1,606 @@
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?zd9j77');
+  src:  url('../fonts/icomoon.eot?zd9j77#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?zd9j77') format('truetype'),
+    url('../fonts/icomoon.woff?zd9j77') format('woff'),
+    url('../fonts/icomoon.svg?zd9j77#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-game-controller:before {
+  content: "\e908";
+  font-size: 30px;
+  color: #E6BC2F;
+}
+.icon-home:before {
+  content: "\e90d";
+  font-size: 30px;
+}
+.icon-instagram:before {
+  content: "\e90e";
+}
+.icon-youtube:before {
+  content: "\e90f";
+}
+.icon-twitter:before {
+  content: "\e900";
+  color: white;
+}
+.icon-file-empty:before {
+  content: "\e909";
+  font-size: 24px;
+  color: #30A7D7;
+}
+.icon-tv:before {
+  content: "\e90b";
+  font-size: 25px;
+  color: #EE6B2F;
+}
+.icon-show:before {
+  content: "\e90b";
+}
+.icon-user-plus:before {
+  content: "\e90c";
+  font-size: 20px;
+}
+.icon-user:before {
+  content: "\e90c";
+}
+.icon-user-add:before {
+  content: "\e90c";
+}
+.icon-profile:before {
+  content: "\e90c";
+}
+.icon-avatar:before {
+  content: "\e90c";
+}
+.icon-person:before {
+  content: "\e90c";
+}
+.icon-member:before {
+  content: "\e90c";
+}
+.icon-search:before {
+  content: "\e90a";
+  font-size: 20px;
+}
+.icon-calendar:before {
+  content: "\e911";
+  font-size: 25px;
+  color: #4DAD5B;
+}
+.icon-nintendoswitch:before {
+  content: "\e910";
+  color: #1B53BA;
+  font-size: 25px;
+}
+.icon-facebook2:before {
+  content: "\e907";
+}
+@font-face {
+    font-family: 'Pokefont';
+    src: url('../fonts/pokefont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PokefontDelgada';
+    src: url('../fonts/pokefontdelgada.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+  margin: 0;
+}
+.contenedor {
+  margin:0 auto;
+  max-width:887px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style: none;
+  height: 95px;
+  background-color: #313131;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+.header-container {
+  display: flex;
+}
+.header li {
+  display: flex;
+}
+.header a {
+  text-decoration: none;
+  min-width: 125px;
+  display: flex;
+  align-items:center;
+  color:white;
+  font-family:'Pokefont';
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  justify-content: flex-start;
+  border-right: 2px solid black;
+}
+.header nav {
+  display: flex;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+}
+.icon-trans {
+  transform: rotate(90deg);
+}
+.icon-card {
+  transform: rotate(30deg);
+  position: relative;
+}
+.icon-card2 {
+  transform: translateX(-5px);
+  position: absolute;
+}
+.icon-margin {
+  margin: 15px 0 8px;
+  width: 30px;
+  height: 30px;
+}
+.nav-grey {
+  box-shadow: 0px -7px 0px 0px grey inset;
+}
+.nav-red {
+  box-shadow: 0px -7px 0px 0px red inset;
+}
+.nav-orange {
+  box-shadow: 0px -7px 0px 0px #EE6B2F inset;
+}
+.nav-yellow {
+  box-shadow: 0px -7px 0px 0px #E6BC2F inset;
+}
+.nav-blue {
+  box-shadow: 0px -7px 0px 0px #30A7D7 inset;
+}
+.nav-d-blue {
+  box-shadow: 0px -7px 0px 0px #1B53BA inset;
+}
+.nav-green {
+  box-shadow: 0px -7px 0px 0px #4DAD5B inset;
+}
+.header-container .nav-grey:hover{
+  background-color: grey;
+}
+.header-container .nav-red:hover{
+  background-color: red;
+}
+.header-container .nav-orange:hover {
+  background-color: #EE6B2F ;
+}
+.header-container .nav-yellow:hover {
+  background-color: #E6BC2F;
+}
+.header-container .nav-blue:hover {
+  background-color: #30A7D7;
+}
+.header-container .nav-d-blue:hover {
+  background-color: #1B53BA;
+}
+.header-container .nav-green:hover {
+  background-color: #4DAD5B;
+}
+.header-container .nav-green{
+  border-right:none;
+}
+.side-bar {
+  list-style: none;
+  position: fixed;
+  top: 160px;
+  left: 32px;
+  color: white;
+  z-index: 1;
+}
+.side-bar a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Pokefont';
+  font-size: 10px;
+  font-weight: 550;
+}
+.side-bar li {
+  padding: 20px 10px;
+  text-align: center;
+  line-height: 0.8;
+}
+.sing {
+  background-color: #54b564;
+  border: 2px solid #323232;
+  border-radius: 0 18px 0 0;
+}
+.join {
+  background-color: #323232;
+}
+.icon-plus {
+  background-color: #ee6b2f;
+  border-right: 2px solid #323232;
+}
+.icon-searching {
+  background-color: #424242;
+  border-right: 2px solid #323232;
+  border-bottom: 2px solid #323232;
+  border-radius: 0 0 5px 0;
+}
+.left-bar {
+  width: 32px;
+  height: 100vh;
+  position: fixed;
+  background-color: #323232;
+  left:0;
+  top:95px;
+}
+.left-right {
+  width: 32px;
+  height: 100vh;
+  position: fixed;
+  background-color: #323232;
+  right:0;
+  top:95px;
+}
+
+.latias-container {
+  font-family: 'pokefont';
+  text-rendering: auto;
+  color: white;
+  padding-top: 30px;
+  position: relative;
+  display: grid;
+  grid-template: repeat(3, 220px) / repeat(3, 280px);
+  grid-template-areas: "dragon dragon duo"
+                       "dragon dragon ultra"
+                       "eevee serie dragonlatia";
+  grid-gap: 15px;
+  justify-content: center;
+}
+.latias {
+  border-radius: 10px;
+  background-color:#ee6b2f;
+  grid-area: dragon;
+}
+.background-latias {
+  padding: 10px 15px;
+}
+.background-latias p {
+  color: black;
+}
+.latias img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.duo-latias {
+  display: flex;
+  height: 180px;
+  background-color: #30a7d7;
+  border-radius: 10px;
+  grid-area: duo;
+
+}
+.duo-latias img {
+  width: 50%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+.duo-latias h3 {
+  padding:20px 20px;
+  margin:0;
+  color: white;
+}
+.ultra {
+  background-color: #ff90c4;
+  height: 220px;
+  border-radius: 10px;
+  grid-area: ultra;
+  margin-top: -35px;
+}
+.ultra img {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px 10px 0 0 ;
+}
+.ultra h3 {
+  padding:10px 20px;
+  margin: 0;
+}
+.dragones-latias {
+  background-color: #E3350D;
+  height: 265px;
+  border-radius: 10px;
+  margin-top: -30px;
+  grid-area: dragonlatia;
+}
+.dragones-latias img {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px 10px 0 0 ;
+}
+.dragones-latias h3 {
+  padding:10px 20px;
+  margin: 0;
+}
+.serie-sol {
+  background-color: #282828;
+  border-radius: 10px;
+  grid-area: serie;
+}
+.serie-sol img {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px 10px 0 0 ;
+}
+.serie-sol h3 {
+  padding:10px 20px;
+  margin: 0;
+}
+.eevee {
+  background-color: #734bb2;
+  border-radius: 10px;
+  grid-area: eevee;
+}
+.eevee img {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px 10px 0 0 ;
+}
+.eevee h3 {
+  padding:10px 20px;
+  margin: 0;
+}
+.pokemon-bar {
+  padding: 40px 0;
+  position: relative;
+  width: 100vmax;
+  min-height: 400px;
+
+/*  overflow: hidden;*/
+/*  display: block;*/
+}
+.pokemon-list {
+  font-family: 'pokefont';
+  color: white;
+  /*background-color: #313131;*/
+  border-top: 3px solid #232323;
+/*  clear: both;*/
+/*  float: left;*/
+  position: relative;
+/*  display: inline-block;*/
+  width: 100vw;
+  height: 380px;
+}
+.slider-pokemon {
+  display: table;
+  position: absolute;
+  width: 100vw;
+  font-size: 0;
+  top:0;
+  left:0;
+  height: 380px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+.pokemon-item {
+/*  padding-top: 2px;*/
+  display: table-cell;
+  white-space: nowrap;
+  float: none;
+/*  margin: 0 0 0 -4px;*/
+  min-width: 250px;
+  height: 380px;
+  background: #616161;
+  border-left: 3px solid #232323;
+/*  vertical-align: top;*/
+/*  position: relative;*/
+}
+.item-form {
+  display: none;
+  font-size: 15px;
+}
+.active {
+  display: block;
+}
+.pokemon-image {
+  top:0;
+  left:50%;
+}
+.pokemon-image img {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+}
+.pokemon-item.active-size {
+  min-width: 360px;
+  top:0;
+  right: 0;
+  left:60%;
+}
+.item-description.active-description {
+  background-color:#232323;
+  padding-bottom: 50px;
+  position: relative;
+}
+.pokemon-item.active-size img{
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  margin-top: -50px;
+}
+.item-description {
+  padding:25px;
+  position:relative;
+  left: 0;
+  top: 72.5%;
+  max-height: 90px;
+  background-color: #313131;
+  overflow: hidden;
+  vertical-align: baseline;
+  display: block;
+}
+.item-description h5 {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.item-description span {
+  float: right;
+}
+.types {
+  margin: -20px 10px 10px 70px;
+  background-color: grey;
+  padding: 5px 10px;
+  max-width: 55px;
+  border-radius: 5px;
+}
+.abilities {
+  margin: -20px 10px 10px 90px;
+}
+.footer {
+  background-color: #1F1F1F;
+}
+.icon-social {
+  font-size: 23px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+.icon-social.icon-twitter {
+  background-color: #3DA9CB;
+}
+.icon-social.icon-youtube {
+  background-color: #CE332D;
+}
+.icon-social.icon-facebook2 {
+  background-color:#3B5998;
+}
+.icon-social.icon-instagram {
+  background-image: linear-gradient(to bottom left,#6A3BC2, #A12BB6, #D92C86,#FC8814,#FDBC4C);
+}
+.footer-container {
+  display: flex;
+  justify-content:flex-start;
+  padding:30px 0 20px 0;
+}
+.footer-container li{
+  list-style: none;
+}
+.footer-company {
+  border-right: 2px solid black;
+  padding-right: 45px;
+  padding-left: 10px;
+}
+.footer-company li {
+  color: #616161;
+  padding-bottom: 10px;
+  font-family: 'arial';
+  font-weight: bold;
+  font-size: 14px;
+}
+.footer-company li:hover{
+  color: white;
+}
+.footer-company h4{
+  color: white;
+  font-size: 20px;
+  margin-top: 0;
+  font-family: 'arial';
+  text-shadow: 4px 3px black;
+}
+.siguenos {
+  border-right: 2px solid black;
+  padding:0 90px 0 40px;
+}
+.siguenos h5{
+  color: white;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'PokefontDelgada';
+}
+.bbb {
+  color: #424242;
+  align-self: center;
+  padding-left: 30px;
+  font-family: sans-serif;
+  font-size: 11px;
+  margin-top: 85px;
+}
+.bbb-container {
+  display: flex;
+}
+.bbb-condiciones {
+  margin-left: 10px;
+  margin-top: -7px;
+  margin-bottom: 15px;
+}
+.bbb-condiciones li {
+  padding-bottom: 7px;
+}
+.bbb-condiciones a {
+  color: inherit;
+}
+.siguenos span {
+  margin-right: 8px;
+}
+.slider-title {
+  color:#919191;
+}
+.slider-title h3{
+  display: inline-block;
+  margin: 0;
+  padding-left: 5px;
+}
+.slider-title img {
+  vertical-align:middle;
+}
+.slider-title-container {
+  background-color: #232323;
+  padding: 11px 20px 8px;
+  max-width:250px;
+  margin-left: 20px;
+  border-radius: 5px 5px 0 0;
+  font-family: 'PokefontDelgada';
+  letter-spacing: 1px;
+}
+.semana-container {
+  font-family: 'pokefont';
+  text-rendering: auto;
+  color: white;
+  padding-top: 30px;
+  position: relative;
+  display: grid;
+  grid-template: repeat(4, 220px) / repeat(3, 280px);
+  grid-template-areas: "meseevee Twich estelares"
+                       "vacio novedades vacio"
+                       "duoleyenda seriesol tormenta"
+                       "vacio seriesol noticias";
+  grid-gap: 15px;
+  justify-content: center;
+}
