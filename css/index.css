@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?zd9j77');
@@ -27,7 +26,6 @@
 .icon-game-controller:before {
   content: "\e908";
   font-size: 30px;
-  color: #E6BC2F;
 }
 .icon-home:before {
   content: "\e90d";
@@ -46,12 +44,10 @@
 .icon-file-empty:before {
   content: "\e909";
   font-size: 24px;
-  color: #30A7D7;
 }
 .icon-tv:before {
   content: "\e90b";
   font-size: 25px;
-  color: #EE6B2F;
 }
 .icon-show:before {
   content: "\e90b";
@@ -85,11 +81,9 @@
 .icon-calendar:before {
   content: "\e911";
   font-size: 25px;
-  color: #4DAD5B;
 }
 .icon-nintendoswitch:before {
   content: "\e910";
-  color: #1B53BA;
   font-size: 25px;
 }
 .icon-facebook2:before {
@@ -177,6 +171,10 @@ body {
 }
 .nav-yellow {
   box-shadow: 0px -7px 0px 0px #E6BC2F inset;
+  color: #E6BC2F;
+}
+.nav-yellow span {
+  color: inherit;
 }
 .nav-blue {
   box-shadow: 0px -7px 0px 0px #30A7D7 inset;
@@ -187,28 +185,35 @@ body {
 .nav-green {
   box-shadow: 0px -7px 0px 0px #4DAD5B inset;
 }
-.header-container .nav-grey:hover{
+.nav-grey .icon-margin:hover{
   background-color: grey;
+  color: white;
 }
-.header-container .nav-red:hover{
+.nav-red:hover{
   background-color: red;
+  color: white;
 }
-.header-container .nav-orange:hover {
+.nav-orange:hover {
   background-color: #EE6B2F ;
+  color: white;
 }
-.header-container .nav-yellow:hover {
+.nav-yellow:hover {
   background-color: #E6BC2F;
+  color: white;
 }
-.header-container .nav-blue:hover {
+.nav-blue:hover {
   background-color: #30A7D7;
+  color: white;
 }
-.header-container .nav-d-blue:hover {
+.nav-d-blue:hover {
   background-color: #1B53BA;
+  color: white;
 }
-.header-container .nav-green:hover {
+.nav-green:hover {
   background-color: #4DAD5B;
+  color: white;
 }
-.header-container .nav-green{
+.nav-green{
   border-right:none;
 }
 .side-bar {
@@ -274,9 +279,9 @@ body {
   position: relative;
   display: grid;
   grid-template: repeat(3, 220px) / repeat(3, 280px);
-  grid-template-areas: "dragon dragon duo"
-                       "dragon dragon ultra"
-                       "eevee serie dragonlatia";
+  grid-template-areas:  "dragon dragon duo"
+                        "dragon dragon ultra"
+                        "eevee serie dragonlatia";
   grid-gap: 15px;
   justify-content: center;
 }
@@ -461,7 +466,6 @@ body {
   max-height: 90px;
   background-color: #313131;
   overflow: hidden;
-  vertical-align: baseline;
   display: block;
 }
 .item-description h5 {
@@ -591,16 +595,75 @@ body {
 }
 .semana-container {
   font-family: 'pokefont';
-  text-rendering: auto;
-  color: white;
-  padding-top: 30px;
-  position: relative;
+  color:black;
+  padding-top: 60px;
+  padding-bottom: 30px;
   display: grid;
-  grid-template: repeat(4, 220px) / repeat(3, 280px);
-  grid-template-areas: "meseevee Twich estelares"
-                       "vacio novedades vacio"
-                       "duoleyenda seriesol tormenta"
-                       "vacio seriesol noticias";
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows : repeat(9, 65px);
   grid-gap: 15px;
-  justify-content: center;
+  /* grid-template-areas:  "meseevee Twich tormenta"
+                        "novedades novedades novedades"
+                        "duoleyenda seriesol noticias"; */
+}
+.semana-container img {
+  width: 100%;
+  height: 55%;
+  border-radius: 10px 10px 0 0;
+}
+.meseevee {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end : 6;
+  border-radius: 10px;
+  background-color: #734bb2 ;
+}
+.Twich{
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end : 5;
+  border-radius: 10px;
+  background-color: #e6bc2f;
+}
+.tormenta {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end : 5;
+  border-radius: 10px;
+  background-color:#CE332D;
+}
+.novedades {
+  grid-row-start: 5;
+  grid-column-start: 2;
+  color: #424242;
+  font-size: 26px;
+  text-align: center;
+}
+.duoleyenda {
+  grid-row-start: 6;
+  grid-row-end:10;
+  border-radius: 10px;
+  background-color: #4dad5b;
+}
+.seriesol {
+  grid-row-start: 7;
+  grid-row-end:10;
+  border-radius: 10px;
+  background-color: #30a7d7;
+}
+.noticias {
+  grid-row-start: 5;
+  grid-row-end:9;
+  border-radius: 10px;
+  background-color: #eb7719;
+}
+.background-padding {
+  padding: 15px;
+}
+.background-padding h3 {
+  margin: 5px 0;
+  color: white;
+}
+.background-padding p {
+  margin: 2px 0;
 }
